@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMwai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        .header {
+            margin-bottom: 64px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .section {
+            margin-bottom: 56px;
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .philosophy {
+            font-size: 1.1rem;
+            color: #888;
+            border-left: 2px solid #333;
+            padding-left: 20px;
+        }
+
+        .focus-list {
+            list-style: none;
+        }
+
+        .focus-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .focus-list li:last-child {
+            border-bottom: none;
+        }
+
+        .focus-name {
+            color: #fff;
+        }
+
+        .focus-desc {
+            color: #555;
+            font-size: 0.875rem;
+        }
+
+        .projects {
+            display: grid;
+            gap: 16px;
+        }
+
+        .project {
+            background: #111;
+            border: 1px solid #1a1a1a;
+            padding: 20px;
+            text-decoration: none;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .project:hover {
+            border-color: #333;
+            background: #151515;
+        }
+
+        .project-name {
+            color: #fff;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .project-desc {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .links a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s;
+        }
+
+        .links a:hover {
+            color: #fff;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>UMwai<span class="blink">_</span></h1>
+            <p class="tagline">vibe coding</p>
+        </header>
+
+        <section class="section">
+            <div class="philosophy">
+                building things by describing what I want,<br>
+                letting AI handle the rest.<br><br>
+                less typing. more thinking. ship faster.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Focus</h2>
+            <ul class="focus-list">
+                <li>
+                    <span class="focus-name">ai agents</span>
+                    <span class="focus-desc">autonomous systems that build and deploy</span>
+                </li>
+                <li>
+                    <span class="focus-name">trading intelligence</span>
+                    <span class="focus-desc">biotech catalysts, clinical signals</span>
+                </li>
+                <li>
+                    <span class="focus-name">micro-saas</span>
+                    <span class="focus-desc">small tools, real problems</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects">
+                <a href="https://github.com/UMwai/autonomous-enterprise" class="project">
+                    <div class="project-name">autonomous-enterprise</div>
+                    <div class="project-desc">self-monetizing AI agent swarms</div>
+                </a>
+                <a href="https://github.com/UMwai/claude-code-workflows" class="project">
+                    <div class="project-name">claude-code-workflows</div>
+                    <div class="project-desc">battle-tested claude code configs</div>
+                </a>
+                <a href="https://github.com/UMwai/biotech-ma-predictor" class="project">
+                    <div class="project-name">biotech-ma-predictor</div>
+                    <div class="project-desc">predict acquisitions before announcements</div>
+                </a>
+                <a href="https://github.com/UMwai/um-biotech-catalyst-radar" class="project">
+                    <div class="project-name">biotech-catalyst-radar</div>
+                    <div class="project-desc">track phase 2/3 trial catalysts</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Links</h2>
+            <div class="links">
+                <a href="https://github.com/UMwai">github</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
